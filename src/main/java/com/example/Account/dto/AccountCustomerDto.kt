@@ -1,4 +1,7 @@
 package com.example.Account.dto
 
-class AccountCustomerDto {
-}
+data class AccountCustomerDto (
+    val id: String?,
+    val name: String?,
+    val surname: String?
+)
