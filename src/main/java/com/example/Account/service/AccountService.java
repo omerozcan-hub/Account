@@ -46,6 +46,8 @@ public class AccountService {
                     createAccountRequest.getInitialCredit(),
                     getLocalDateTimeNow(),
                     account);
+
+            account.getTransaction().add(transaction);
         }
         return converter.convert(accountRepository.save(account));
     }
